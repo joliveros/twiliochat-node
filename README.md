@@ -7,19 +7,21 @@ Status](https://travis-ci.org/TwilioDevEd/twiliochat-node.svg?branch=master)](ht
 
 ### Run the application
 
-1. First clone this repository and `cd` into its directory:
+1. First clone this repository and `cd` into it
+
    ```bash
    $ git clone git@github.com:TwilioDevEd/browser-calls-node.git
 
    $ cd twiliochat-node
    ```
 
-1. Install project's dependencies:
+1. Install project's dependencies
 
     ```bash
     $ npm install
     ```
-1. Edit the following environments vars in the `.env` file. Be sure to replace the place holders with real information
+
+1. Edit the following vars in the `.env` file. Be sure to replace the place holders with valid information
 
    ```
    export TWILIO_ACCOUNT_SID=Your-Account-SID
@@ -31,10 +33,8 @@ Status](https://travis-ci.org/TwilioDevEd/twiliochat-node.svg?branch=master)](ht
 
   You can find your `TWILIO_ACCOUNT_SID` in your
   [Twilio Account Settings](https://www.twilio.com/user/account/settings).
-  For `TWILIO_API_KEY` and `TWILIO_API_SECRET` you need to go
-  [here](https://www.twilio.com/user/account/ip-messaging/dev-tools/api-keys). There
-  youl'll be able to create a new API key obtaining the two required values.
-  For `TWILIO_IPM_SERVICE_SID` you can go [here](https://www.twilio.com/user/account/ip-messaging/services),
+  You need to create an API key that will give you a `TWILIO_API_KEY` and a
+   `TWILIO_API_SECRET`. For that purpose click  [here](https://www.twilio.com/user/account/ip-messaging/services),
   where you must create an IP Messaging Service. When the service is created you'll
   have access to the service's SID.
 
@@ -51,7 +51,7 @@ Status](https://travis-ci.org/TwilioDevEd/twiliochat-node.svg?branch=master)](ht
     $ ngrok http 3000 -host-header="localhost:3000"
     ```
 
-That's it
+That's it!
 
 ## Run the tests
 
@@ -61,7 +61,8 @@ That's it
     $ mocha test
     ```
 
-1. Run javascript tests:
+1. Run javascript tests
+
    ```bash
    $ cd public && npm install && npm test
    ```
